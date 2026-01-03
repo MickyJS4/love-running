@@ -94,6 +94,7 @@ main {
     /* 1 Allows the content to grow to fit any surplus space, 0 stops it from shrinking and auto means it's based on it's natural
     size unless specified otherwise. It also pushes the footer down to the bottom of the page*/
     flex: 1-0 auto;
+    margin-top: 47px;
 }
 
 /* Footer */
