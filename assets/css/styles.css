@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Lato", sans-serif;
 }
 
 /* General styles */
@@ -33,6 +34,22 @@ header {
 header a {
     text-decoration: none;
     color: inherit;
+}
+
+#menu {
+    letter-spacing: 4px;
+    list-style-type: none;
+    font-size: 110%;
+}
+
+#menu > li {
+    margin-bottom: 1em;
+
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+
 }
 
 h1 {
