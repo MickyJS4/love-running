@@ -159,6 +159,22 @@ hr {
     padding: 0 20px;
 }
 
+#circle-cover-bg {
+    background: url("../images/reasons-image.webp") no-repeat top  center / cover;
+    width: 90vw;
+    height: 90vw;
+    margin-bottom: 20px;
+    /* Makes the square into a circle */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Media query: tablets and larger (768px and up */
 @media screen and (min-width: 768px){
