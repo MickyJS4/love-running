@@ -92,10 +92,14 @@ nav {
 }
 /* Main content */
 main {
+    /* Enlarges main element to push footer down */
+
         /* 1 Allows the content to grow to fit any surplus space, 0 stops it from shrinking and auto means it's based on it's natural
     size unless specified otherwise. It also pushes the footer down to the bottom of the page*/
     flex: 1 0 auto;
     margin-top: 47px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Hero section */
@@ -203,6 +207,57 @@ hr {
     line-height: 0;
 }
 
+/* Signup page*/
+#signup {
+    background-image: url("../images/signup-image.webp");
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+}
+
+
+#signup-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+}
+
+
+#signup-form h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
+
+.radio-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px;
+    font-size: 100%;
+    background-color: #454b1b;
+    color: #fafafa;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -218,9 +273,8 @@ hr {
     color: #3a3a3a;
 }
 
-
 /* Media query: large or landscape phones (576px and up) */
-@media screen and (mind-width: 576px){
+@media screen and (min-width: 576px){
     #photos {
         column-count: 2;
         column-gap: 0;
@@ -268,14 +322,14 @@ hr {
         
     }
 
-    #benefits-phyiscal,
+    #benefits-physical,
     #benefits-mental {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
-    #benefits-phyiscal > div,
+    #benefits-physical > div,
     #benefits-mental > div {
         width: 75%;
     }
@@ -289,6 +343,28 @@ hr {
     #photos {
         column-count: 3;
         column-gap: 0;      
+    }
+
+        /* Form */
+    #signup {
+        background-position: center;
+        position: relative;
+    }
+
+    #signup-form {
+        max-width: 400px;
+        position: absolute;
+        left: 10%;
+        top: 150px;
+    }
+
+    .text-input:hover {
+        border-color: #f16c6b;
+    }
+
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
     }
 }
 

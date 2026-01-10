@@ -37,7 +37,36 @@
 
     <!-- Main content -->
     <main>
-        <section id="hero"></section>
+        <section id="signup">
+            <form id="signup-form" action="https://formdump.codeinstitute.net" method="post">
+                <h2><i class="fa-solid fa-heartbeat"></i> LET'S GET YOU SIGNED UP!</h2>
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name" class="text-input"><br>
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name" class="text-input"><br>
+                <label for="email-address">Email Address</label>
+                <input type="email" name="email-address" id="email-address" class="text-input"><br>
+                
+                <div class="radio-buttons">
+                    <div>
+                        <label for="road">Road</label>
+                        <input type="radio" id="road" value ="Road" name="running_preference" required checked>
+                    </div>
+
+                    <div>
+                        <label for="trail">Trail</label>
+                        <input type="radio" id="trail" value ="Trail" name="running_preference" required>
+                    </div>
+
+                    <div>
+                        <label for="both">Both</label>
+                        <input type="radio" id="both" value ="Both" name="running_preference" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="join-button">Submit</button>
+            </form>
+        </section>
 
     </main>
 
@@ -46,22 +75,22 @@
         <ul id="social-networks">
             <li>
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener" 
-                aria-labrl="visit our Facebook page (opens in a new tab)">
+                aria-label="visit our Facebook page (opens in a new tab)">
              <i class="fa-brands fa-facebook"></i></a>
             </li>
             <li>
                 <a href="https://x.com/" target="_blank" rel="noopener" 
-                aria-labrl="visit our Twitter page (opens in a new tab)">
+                aria-label="visit our Twitter page (opens in a new tab)">
                 <i class="fa-brands fa-square-twitter"></i></a>
             </li>
             <li>
                 <a href="https://www.youtube.com/" target="_blank" rel="noopener" 
-                aria-labrl="visit our YouTube page (opens in a new tab)">
+                aria-label="visit our YouTube page (opens in a new tab)">
                 <i class="fa-brands fa-square-youtube"></i></a>
             </li>
             <li>
                 <a href="https://www.instagram.com/" target="_blank" rel="noopener" 
-                aria-labrl="visit our Instagram page (opens in a new tab)">
+                aria-label="visit our Instagram page (opens in a new tab)">
                 <i class="fa-brands fa-instagram"></i></a>
             </li>
         </ul>
